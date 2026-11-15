@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="description" content="Kittitas County Lab Values – critical ranges, causes & EMS treatments" />
+  <title>Lab Values</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="apple-touch-icon" href="./icon-192.png" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="top-row">
+        <button id="back-btn" aria-label="Back">←</button>
+        <h1>Lab Values</h1>
+      </div>
+      <input type="search" id="search-input" placeholder="Search Na, potassium, DKA, calcium…" autocomplete="off" enterkeyhint="search" />
+    </header>
+
+    <div class="main">
+      <div id="home-view">
+        <div class="welcome">
+          <h2>Kittitas Lab Reference</h2>
+          <p>Critical values · Causes · EMS treatments</p>
+        </div>
+        <div class="tile-grid" id="tile-grid"></div>
+      </div>
+
+      <div id="detail-view" class="hide"></div>
+      <div id="search-results"></div>
+    </div>
+  </div>
+
+  <div id="offline-badge">Offline mode</div>
+  <script src="./app.js"></script>
+</body>
+</html>
